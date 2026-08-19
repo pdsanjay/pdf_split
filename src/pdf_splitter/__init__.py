@@ -11,7 +11,17 @@ spans carry font metadata (size, bold/italic flags, colour, y-position).
 from .models import Block, PageLayout, Span
 from .extraction import extract_layout
 from .boilerplate import strip_boilerplate, StripResult
+from .toc import parse_toc, TocEntry
 
-__all__ = ["extract_layout", "PageLayout", "Block", "Span", "strip_boilerplate", "StripResult"]
+__all__ = [
+    "extract_layout",
+    "PageLayout",
+    "Block",
+    "Span",
+    "strip_boilerplate",
+    "StripResult",
+    "parse_toc",
+    "TocEntry",
+]
 
 __version__ = "0.1.0"
